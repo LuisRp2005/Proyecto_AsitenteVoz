@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat por Voz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #chat-container {
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 400px;
+            background-color: #f9f9f9;
+        }
+        .message {
+            margin: 5px 0;
+        }
+        .message.user {
+            text-align: right;
+            color: blue;
+        }
+        #input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+        #message-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #send-button, #voice-button {
+            padding: 10px;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat por Voz</h1>
+    <div id="chat-container"></div>
+    <div id="input-container">
+        <input type="text" id="message-input" placeholder="Escribe o habla tu mensaje">
+        <button id="voice-button">🎤</button>
+        <button id="send-button">Enviar</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
